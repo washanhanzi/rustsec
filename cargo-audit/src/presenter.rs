@@ -180,6 +180,11 @@ impl Presenter {
         }
     }
 
+    /// Whether to print the report
+    pub fn is_print_report(&self) -> bool {
+        !self.config.disable_print_report
+    }
+
     /// Print the vulnerability report for cargo-audit
     pub fn print_self_report(&mut self, self_advisories: &[rustsec::Advisory]) {
         if self_advisories.is_empty() {

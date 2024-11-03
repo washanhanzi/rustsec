@@ -151,6 +151,8 @@ pub struct OutputConfig {
 
     /// Show inverse dependency trees along with advisories (default: true)
     pub show_tree: Option<bool>,
+
+    pub disable_print_report: bool,
 }
 
 impl OutputConfig {
