@@ -5,8 +5,7 @@ version = 3
 [[package]]
 name = "abscissa_core"
 version = "0.8.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "de5df09bc18cb069dec8524aff811cbe9d7bf5f4b78ef739ef125a37b9d3f044"
+source = "git+https://github.com/washanhanzi/abscissa?branch=main#d0390dfa2e1173295e512cac65bac96ed1672830"
 dependencies = [
  "abscissa_derive",
  "arc-swap",
@@ -31,8 +30,7 @@ dependencies = [
 [[package]]
 name = "abscissa_derive"
 version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e04c7df69b2c6b9b6dba8422d1295e58ac4bcfc7c9e7e7d4c55a38aaff2ad92a"
+source = "git+https://github.com/washanhanzi/abscissa?branch=main#d0390dfa2e1173295e512cac65bac96ed1672830"
 dependencies = [
  "ident_case",
  "proc-macro2",
@@ -1936,7 +1934,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8a45489186a6123c128fdf6016183fcfab7113e1820eb813127e036e287233fb"
 dependencies = [
  "jiff-tzdb-platform",
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3515,7 +3513,7 @@ version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
 dependencies = [
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]

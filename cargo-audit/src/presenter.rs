@@ -342,12 +342,12 @@ impl Presenter {
 
     /// Display an attribute of a particular vulnerability
     fn print_attr(&self, color: Color, attr: &str, content: impl AsRef<str>) {
-        terminal::status::Status::new()
-            .bold()
-            .color(color)
-            .status(attr)
-            .print_stdout(content.as_ref())
-            .unwrap();
+        // terminal::status::Status::new()
+        //     .bold()
+        //     .color(color)
+        //     .status(attr)
+        //     .print_stdout(content.as_ref())
+        //     .unwrap();
     }
 
     /// Print the inverse dependency tree to standard output
@@ -361,12 +361,12 @@ impl Presenter {
             return;
         }
 
-        terminal::status::Status::new()
-            .bold()
-            .color(color)
-            .status("Dependency tree:\n")
-            .print_stdout("")
-            .unwrap();
+        // terminal::status::Status::new()
+        //     .bold()
+        //     .color(color)
+        //     .status("Dependency tree:\n")
+        //     .print_stdout("")
+        //     .unwrap();
 
         let package_node = tree.nodes()[&Dependency::from(package)];
         tree.render(

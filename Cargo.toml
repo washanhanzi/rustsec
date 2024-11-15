@@ -7,11 +7,11 @@ members = [
     "cvss",
     "platforms",
     "quitters",
-    "rustsec"
+    "rustsec",
 ]
 
 [workspace.dependencies]
-abscissa_core = "0.8"
+abscissa_core = { git = "https://github.com/washanhanzi/abscissa", branch = "main" }
 askama = "0.12"
 atom_syndication = "0.12"
 auditable-info = "0.8"
